@@ -48,10 +48,10 @@ We deploy the Voting Ensemble model, which is the best model, using Azure Contai
 
 
 ### Step 3: Enable App Insights & Logging
-In order to enable Application Insights programmatically, we edited the logs.py script to match the deployed model ID and change App Inights to TRUE. Then, we run the python script.
+In order to enable Application Insights programmatically, we edited the logs.py script to match the deployed model ID and change App Inights to TRUE. Then, we run the python script. We choose the best model for deployment and enable "Authentication" while deploying the model using Azure Container Instance (ACI). The executed code in logs.py enables Application Insights. "Application Insights enabled" is disabled before executing logs.py.
 ![App Insights](https://github.com/kkech/UdacityProj2_MS/blob/master/appInsEnabled.png)  
 
-Screenshots of Logs:
+Application Insight Logs are presenting:
 ![Logs](https://github.com/kkech/UdacityProj2_MS/blob/master/appInsLog.png) 
 
 ### Step 4: Swagger Documentation
@@ -64,7 +64,7 @@ We downloaded swagger.json file from deployed model on Azure. Then we ran swagge
 Then we used endpoint.py script to consume the model endpoints. We first edited the *scoring_uri* and the *key* in the script to match the URI and the key of our service. Then, we executed endpoint.py script.
 ![Endpoint](https://github.com/kkech/UdacityProj2_MS/blob/master/endpointCall.png) 
 
-Also, we benchmark the endpoint using Apache bench.
+Also, we benchmark the endpoint using Apache bench. You can see the benchmark bellow:
 ![Benchmark](https://github.com/kkech/UdacityProj2_MS/blob/master/ab1.png)
 ![Benchmark](https://github.com/kkech/UdacityProj2_MS/blob/master/ab2.png) 
 
@@ -75,7 +75,7 @@ Then, we deployed our training pipeline and published it.
 Pipeline Endpoint:
 ![Pipeline](https://github.com/kkech/UdacityProj2_MS/blob/master/pipelineEndpoint.png) 
 
-Bankingmarketing dataset with AutoML module:
+Banking Marketing dataset with AutoML module:
 ![Pipeline](https://github.com/kkech/UdacityProj2_MS/blob/master/bankMarketDataset__AND__PublishedPipeline.png) 
 
 Published Pipeline Overview:
