@@ -84,6 +84,10 @@ Published Pipeline Overview:
 Run Details Widget:
 ![Pipeline](https://github.com/kkech/UdacityProj2_MS/blob/master/scheduledRun.png)
 
+Scheduled Run:
+![Pipeline](https://github.com/kkech/UdacityProj2_MS/blob/master/scheduledRun.png)
+
+
 ## Screen Recording
 [Screencast](https://youtu.be/qmUmhM-7Qk0)
 
