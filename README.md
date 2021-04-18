@@ -27,7 +27,7 @@ The project involves:
 
 ## Architectural Diagram
 The diagram below illustrates the keys steps of our operation:
-![Architecture](https://github.com/dinaabdulrasoul/Operationalizing-Machine-Learning/blob/main/architecture%20diagram.PNG) 
+![Architecture]() 
 
 * We will use Bank Marketing Dataset to create an AutoML. The AutoML will help up find the best model and the best parameters to fit our data. 
 * We use the model obtained by the AutoML to train an ML pipeline.
