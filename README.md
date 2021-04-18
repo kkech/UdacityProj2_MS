@@ -82,7 +82,7 @@ Published Pipeline Overview:
 ![Pipeline](https://github.com/kkech/UdacityProj2_MS/blob/master/bankMarketDataset__AND__PublishedPipeline.png) 
 
 Run Details Widget:
-![Pipeline](https://github.com/kkech/UdacityProj2_MS/blob/master/scheduledRun.png)
+![Pipeline](https://github.com/kkech/UdacityProj2_MS/blob/master/RunDetails.png)
 
 Scheduled Run:
 ![Pipeline](https://github.com/kkech/UdacityProj2_MS/blob/master/scheduledRun.png)
