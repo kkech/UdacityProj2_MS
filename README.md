@@ -87,6 +87,8 @@ Run Details Widget:
 ## Screen Recording
 [Screencast](https://youtu.be/qmUmhM-7Qk0)
 
+My screen is in full screen mode at 1080p and 16:9 aspect ratio. I used OBS for the recording.
+
 ## Future Improvements
 * We can increase the Exit Criterion time from 1 hour to the default value of 3 hours to be able to find models of higher accuracy.
 * We can enable deep learning in AutoML
