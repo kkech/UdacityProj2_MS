@@ -39,9 +39,6 @@ The diagram below illustrates the keys steps of our operation:
 We first upload our dataset using the dataset's URI:
 ![Dataset](https://github.com/kkech/UdacityProj2_MS/blob/master/RegisteredDataset.png)  
 
-In the Experiment section, we can see the AutoML run and the pipeline as completed:  
-![Complete Run]()
-
 After the run is complete, we're able to determine the best model which is the **Voting Ensemble** with accuracy of **0.91988**:
 ![Best Model](https://github.com/kkech/UdacityProj2_MS/blob/master/AutoMlModelsAcc.png)  
 
@@ -75,9 +72,6 @@ Also, we benchmark the endpoint using Apache bench.
 In this step, we first updated our jupyter notebook variables to match our azure enviroment variables. 
 Then, we deployed our training pipeline and published it. 
 
-Here we can see the Pipeline section in Azure Machine Learning studio:
-![Pipeline]()
-
 Pipeline Endpoint:
 ![Pipeline](https://github.com/kkech/UdacityProj2_MS/blob/master/pipelineEndpoint.png) 
 
@@ -91,7 +85,7 @@ Run Details Widget:
 ![Pipeline](https://github.com/kkech/UdacityProj2_MS/blob/master/scheduledRun.png)
 
 ## Screen Recording
-[Screencast]()
+[Screencast](https://youtu.be/qmUmhM-7Qk0)
 
 ## Future Improvements
 * We can increase the Exit Criterion time from 1 hour to the default value of 3 hours to be able to find models of higher accuracy.
