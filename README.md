@@ -27,7 +27,7 @@ The project involves:
 
 ## Architectural Diagram
 The diagram below illustrates the keys steps of our operation:
-![Architecture]() 
+![Architecture](https://github.com/kkech/UdacityProj2_MS/blob/master/architectureDiagram.png) 
 
 * We will use Bank Marketing Dataset to create an AutoML. The AutoML will help up find the best model and the best parameters to fit our data. 
 * We use the model obtained by the AutoML to train an ML pipeline.
@@ -37,37 +37,39 @@ The diagram below illustrates the keys steps of our operation:
 
 ### Step 1: Automated ML Experiment
 We first upload our dataset using the dataset's URI:
-![Dataset]()  
+![Dataset](https://github.com/kkech/UdacityProj2_MS/blob/master/RegisteredDataset.png)  
 
 In the Experiment section, we can see the AutoML run and the pipeline as completed:  
 ![Complete Run]()
 
-After the run is complete, we're able to determine the best model which is the **Voting Ensemble** with accuracy of **0.91866**:
-![Best Model]()  
+After the run is complete, we're able to determine the best model which is the **Voting Ensemble** with accuracy of **0.91988**:
+![Best Model](https://github.com/kkech/UdacityProj2_MS/blob/master/AutoMlModelsAcc.png)  
 
 ### Step 2: Deploy the best model
 We deploy the Voting Ensemble model, which is the best model, using Azure Container Instacne (ACI) while making sure that the Authentication option enabled.
-![Deployment]()  
+![Deployment](https://github.com/kkech/UdacityProj2_MS/blob/master/deployedModel.png)  
 
 
 ### Step 3: Enable App Insights & Logging
 In order to enable Application Insights programmatically, we edited the logs.py script to match the deployed model ID and change App Inights to TRUE. Then, we run the python script.
-![App Insights]()  
+![App Insights](https://github.com/kkech/UdacityProj2_MS/blob/master/appInsEnabled.png)  
 
 Screenshots of Logs:
-![Logs]() 
+![Logs](https://github.com/kkech/UdacityProj2_MS/blob/master/appInsLog.png) 
 
 ### Step 4: Swagger Documentation
 In this step, we setup Swagger to be able to deploy and consume model.
 We downloaded swagger.json file from deployed model on Azure. Then we ran swagger.sh and serve.py script on Powershell command window.
-![Swagger]() 
-![Swagger]() 
-![Swagger]() 
-![Swagger]() 
+![Swagger](https://github.com/kkech/UdacityProj2_MS/blob/master/swaggerModel.png) 
+
 
 ### Step 5: Consume model endpoints  
 Then we used endpoint.py script to consume the model endpoints. We first edited the *scoring_uri* and the *key* in the script to match the URI and the key of our service. Then, we executed endpoint.py script.
-![Endpoint]() 
+![Endpoint](https://github.com/kkech/UdacityProj2_MS/blob/master/endpointCall.png) 
+
+Also, we benchmark the endpoint using Apache bench.
+![Benchmark](https://github.com/kkech/UdacityProj2_MS/blob/master/ab1.png)
+![Benchmark](https://github.com/kkech/UdacityProj2_MS/blob/master/ab2.png) 
 
 ### Step 6: Create and publish a pipeline
 In this step, we first updated our jupyter notebook variables to match our azure enviroment variables. 
@@ -77,19 +79,16 @@ Here we can see the Pipeline section in Azure Machine Learning studio:
 ![Pipeline]()
 
 Pipeline Endpoint:
-![Pipeline]() 
+![Pipeline](https://github.com/kkech/UdacityProj2_MS/blob/master/pipelineEndpoint.png) 
 
 Bankingmarketing dataset with AutoML module:
-![Pipeline]() 
+![Pipeline](https://github.com/kkech/UdacityProj2_MS/blob/master/bankMarketDataset__AND__PublishedPipeline.png) 
 
 Published Pipeline Overview:
-![Pipeline]() 
+![Pipeline](https://github.com/kkech/UdacityProj2_MS/blob/master/bankMarketDataset__AND__PublishedPipeline.png) 
 
 Run Details Widget:
-![Pipeline]()
-
-
-![Pipeline]() 
+![Pipeline](https://github.com/kkech/UdacityProj2_MS/blob/master/scheduledRun.png)
 
 ## Screen Recording
 [Screencast]()
